@@ -37,5 +37,4 @@ Notes about the script and environment:
 * Network Virtual Appliance (NVA) credentials, username: consoleadmin, password: google123 
 * No Cloud NAT for untrusted VPC (or any VPCs) and Routing not allowed through appliances from untrusted to any of the other VPCs, so traffic sourced from vm-in-untrusted will fail. This VM is to test reachability from other VPCs to it. 
 * Management VPC is to reach NVAs so no reachability to hub VPCs, spoke VPCs or untrusted VPC. There is a VPC Peering to Transit VPC to reach management VPC from on-prem (Transit VPC simulates connection to on-prem). 
-* No interface tracking configured on NVAs, so loss of a single interface could cause extended traffic loss.
 * This script creates single-regional appliances. For how to configure multi-regional appliances, see see https://medium.com/google-cloud/need-dynamic-multi-region-failover-for-network-appliances-in-google-cloud-ea968e88ca0c and check back for a link to a possible future multi-regional script.
