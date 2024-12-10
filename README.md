@@ -13,7 +13,7 @@ See the [diagram](https://github.com/kurtradecki/gcp-nva-ilb-demo/blob/main/diag
 
 
 Process to run the script:
-* Create a project in GCP, if not already. Reference if needed [Creating and managing projects ](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
+* Create a project in GCP, if not already created. Reference if needed [Creating and managing projects ](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
 * Access the Google Cloud command line (in Cloud Shell or gcloud on your machine). Reference if needed [Launch Cloud Shell](https://cloud.google.com/shell/docs/launching-cloud-shell)
 * At the command prompt run gcloud config set project <project_id> . Reference if needed for how to find project ID, see [Find the project name, number, and ID](https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects)
 * In Google Cloud Shell Clone this repo. Reference if needed [Clone a repository](https://cloud.google.com/shell/docs/version-control#clone_a_repository)
