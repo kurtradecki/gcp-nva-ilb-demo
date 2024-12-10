@@ -22,11 +22,11 @@ variable "project-id" {
  type = string
 }
 
-
+/* Currently unused
 variable "ensure-org-policies" {
  type = bool
 }
-
+*/
 
 variable "admin-name" {
  type    = string
