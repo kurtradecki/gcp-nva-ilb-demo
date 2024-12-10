@@ -19,4 +19,4 @@
 #  requireShieldedVm (not enforced) , trustedImageProjects (allow all), vmExternalIpAccess (allow all)
 
 project-id          = "" # ID of an existing project to add GCP components and NVAs
-ensure-org-policies = false                            # Org policies need to be in place for the script to run. Setting the value to true enables these org policies for the project only. 
+# ensure-org-policies = false                            # Currently unused - Org policies need to be in place for the script to run. Setting the value to true enables these org policies for the project only. 
