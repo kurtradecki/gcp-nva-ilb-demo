@@ -9,7 +9,7 @@ Capabilities that can be demonstrated:
 * Hub and spoke environment with multiple hubs and multiple spokes
 * Failing/rebooting an NVA while routing automatically recovers
 
-See the diagram for more architectural details: https://github.com/kurtradecki/gcp-nva-ilb-demo/blob/main/diagram.png
+See the [diagram](https://github.com/kurtradecki/gcp-nva-ilb-demo/blob/main/diagram.png) for more architectural details.
 
 
 Process to run the script:
