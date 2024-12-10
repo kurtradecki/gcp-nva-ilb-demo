@@ -13,14 +13,11 @@ See the diagram for more architectural details: https://github.com/kurtradecki/g
 
 
 Process to run the script:
-* Create a project in GCP, if not already. For reference if needed, see [Creating and managing projects ](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
-* Access the Google Cloud command line (in Cloud Shell or gcloud on your machine). If needed, see https://cloud.google.com/shell/docs/launching-cloud-shell
-* At the command prompt run gcloud config set project <project_id>
-  * For how to find project ID, see https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects
-* In Google Cloud Shell Clone this repo.
-  * See https://cloud.google.com/shell/docs/version-control#clone_a_repository
-* In the Google Cloud Console (GUI) Enable APIs in the project: Compute Engine, Cloud Resource Manager
-  * See https://cloud.google.com/endpoints/docs/openapi/enable-api
+* Create a project in GCP, if not already. Reference if needed [Creating and managing projects ](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
+* Access the Google Cloud command line (in Cloud Shell or gcloud on your machine). Reference if needed [Launch Cloud Shell](https://cloud.google.com/shell/docs/launching-cloud-shell)
+* At the command prompt run gcloud config set project <project_id> . Reference if needed for how to find project ID, see [Find the project name, number, and ID](https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects)
+* In Google Cloud Shell Clone this repo. Reference if needed [Clone a repository](https://cloud.google.com/shell/docs/version-control#clone_a_repository)
+* In the Google Cloud Console (GUI) Enable APIs in the project: Compute Engine, Cloud Resource Manager. Reference if needed [Enabling an API in your Google Cloud project](https://cloud.google.com/endpoints/docs/openapi/enable-api)
 * If needed in the Google Cloud Console (GUI) set Org policies for the project: disableSerialPortAccess (not enforced) , vmCanIpForward (selectively allow or allow all) , requireShieldedVm (not enforced) , trustedImageProjects (selectively allow or allow all), vmExternalIpAccess (selectively allow or allow all)
   * See https://cloud.google.com/resource-manager/docs/organization-policy/creating-managing-policies#creating_and_editing_policies
   * You may need to override the parent policy in the org policy for the project. 
