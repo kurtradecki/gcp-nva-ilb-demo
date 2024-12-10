@@ -2,6 +2,7 @@
 
 The is a simple, non-modular script is intended for learning and demonstration, allowing creation of a hub and spoke environment with full GCP network setup and a fully configured pair of Network Virtual Appliances (NVAs). This is not intended to be a production level script. The NVAs used in the script are Cisco Cloud Services Routers (CSRs). Future versions of the script may add modularity if it is needed, though the intent of the script is to have limited configurability.
 
+
 Capabilities that can be demonstrated:
 * Internal network load balancer as a Next Hop
 * Redundant pair of NVAs fully configured
@@ -9,6 +10,7 @@ Capabilities that can be demonstrated:
 * Failing/rebooting an NVA while routing automatically recovers
 
 See the diagram for more architectural details: https://github.com/kurtradecki/gcp-nva-ilb-demo/blob/main/diagram.png
+
 
 Process to run the script:
 * Create a project in GCP, if not already. See https://cloud.google.com/resource-manager/docs/creating-managing-projects 
@@ -27,6 +29,7 @@ Process to run the script:
 
 Wait ~4 minutes and your environment will be ready to explore! Here's combined set of commands to run on VMs created by the script to test reachability while reloading NVAs:
 * ping -c 5 172.16.1.10 && ping -c 5 10.1.1.10 && ping -c 5 10.1.2.10 && ping -c 5 172.16.2.10 && ping -c 5 10.2.1.10 && ping -c 5 10.2.2.10 && ping -c 5 192.168.10.10 && ping -c 5 192.168.1.10 && ping -c 5 8.8.8.8
+
 
 Notes about the script and environment:
 * Network Virtual Appliance (NVA) can be accessed via console. Select the VM and press the "CONNECT TO SERIAL CONSOLE" button.
