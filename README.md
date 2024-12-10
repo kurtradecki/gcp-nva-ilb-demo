@@ -18,12 +18,10 @@ Process to run the script:
 * At the command prompt run gcloud config set project <project_id> . Reference if needed for how to find project ID, see [Find the project name, number, and ID](https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects)
 * In Google Cloud Shell Clone this repo. Reference if needed [Clone a repository](https://cloud.google.com/shell/docs/version-control#clone_a_repository)
 * In the Google Cloud Console (GUI) Enable APIs in the project: Compute Engine, Cloud Resource Manager. Reference if needed [Enabling an API in your Google Cloud project](https://cloud.google.com/endpoints/docs/openapi/enable-api)
-* If needed in the Google Cloud Console (GUI) set Org policies for the project: disableSerialPortAccess (not enforced) , vmCanIpForward (selectively allow or allow all) , requireShieldedVm (not enforced) , trustedImageProjects (selectively allow or allow all), vmExternalIpAccess (selectively allow or allow all)
-  * See https://cloud.google.com/resource-manager/docs/organization-policy/creating-managing-policies#creating_and_editing_policies
-  * You may need to override the parent policy in the org policy for the project. 
+* If needed in the Google Cloud Console (GUI) set Org policies for the project: disableSerialPortAccess (not enforced) , vmCanIpForward (selectively allow or allow all) , requireShieldedVm (not enforced) , trustedImageProjects (selectively allow or allow all), vmExternalIpAccess (selectively allow or allow all) . Reference if needed [Creating and editing policies](https://cloud.google.com/resource-manager/docs/organization-policy/creating-managing-policies#creating_and_editing_policies)
+  * You may need to override the parent policy in the org policy for the project. Search "override" on the link just above to learn how. 
 * (APIs and Org policies are also noted in terraform.tfvars)
-* Set values in terraform.tfvars such as project-id.
-  * For how to find project ID, see https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects
+* Set values in terraform.tfvars such as project-id. Reference if needed for how to find project ID, see [Find the project name, number, and ID](https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects)
 * At the command prompt run the following terraform commands:
   * `terraform init`
   * `terraform plan`
