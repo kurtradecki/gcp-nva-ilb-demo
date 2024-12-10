@@ -17,13 +17,13 @@ Process to run the script:
 * In Google Cloud Shell Clone this repo. See https://cloud.google.com/shell/docs/version-control#clone_a_repository
 * In the Google Cloud Console (GUI) Enable APIs in the project: Compute Engine, Cloud Resource Manager. See 
 * If needed in the Google Cloud Console (GUI) set Org policies for the project: disableSerialPortAccess (not enforced) , vmCanIpForward (selectively allow or allow all) , requireShieldedVm (not enforced) , trustedImageProjects (selectively allow or allow all), vmExternalIpAccess (selectively allow or allow all)
-*   You may need to override the parent policy in the org policy for the project. 
+  * You may need to override the parent policy in the org policy for the project. 
 * (APIs and Org policies are also noted in terraform.tfvars)
 * Set values in terraform.tfvars such as project-id  (how to find project ID, see https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects)
 * At the command prompt run the following terraform commands:
-** terraform init
-*   terraform plan
-*   terraform apply -auto-approve
+  * terraform init
+  * terraform plan
+  * terraform apply -auto-approve
 
 Wait ~4 minutes and your environment will be ready to explore! 
 
