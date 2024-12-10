@@ -1,6 +1,6 @@
 # Simple script to create hub and spoke with network virtual appliances for GCP learning
 
-The is a simple, non-modular script intended for learning, proofs of concept and demonstration, allowing creation of a full network setup in GCP with a fully configured pair of Network Virtual Appliances (NVAs). This is not intended to be a production level script. The NVAs used in the script is a Cisco Cloud Services Routers (CSRs). Future versions of the script may add modularity if it is needed, though the intent of the script is to have limited configurability.
+The is a simple, non-modular script is intended for learning, proofs of concept and demonstration, allowing creation of a hub and spoke environment with full GCP network setup and a fully configured pair of Network Virtual Appliances (NVAs). This is not intended to be a production level script. The NVAs used in the script are Cisco Cloud Services Routers (CSRs). Future versions of the script may add modularity if it is needed, though the intent of the script is to have limited configurability.
 
 Capabilities that can be demonstrated:
 * Internal network load balancer as a Next Hop
