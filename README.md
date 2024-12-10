@@ -21,7 +21,7 @@ Process to run the script:
 * (APIs and Org policies are also noted in terraform.tfvars)
 * Set values in terraform.tfvars such as project-id  (how to find project ID, see https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects)
 * At the command prompt run the following terraform commands:
-*   terraform init
+** terraform init
 *   terraform plan
 *   terraform apply -auto-approve
 
