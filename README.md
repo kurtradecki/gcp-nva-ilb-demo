@@ -25,7 +25,8 @@ Process to run the script:
   * terraform plan
   * terraform apply -auto-approve
 
-Wait ~4 minutes and your environment will be ready to explore! 
+Wait ~4 minutes and your environment will be ready to explore! Here's combined set of commands to run on VMs created by the script to test reachability while reloading NVAs:
+* ping -c 5 172.16.1.10 && ping -c 5 10.1.1.10 && ping -c 5 10.1.2.10 && ping -c 5 172.16.2.10 && ping -c 5 10.2.1.10 && ping -c 5 10.2.2.10 && ping -c 5 192.168.10.10 && ping -c 5 192.168.1.10 && ping -c 5 8.8.8.8
 
 Notes about the script and environment:
 * Network Virtual Appliance (NVA) can be accessed via console. Select the VM and press the "CONNECT TO SERIAL CONSOLE" button.
@@ -33,5 +34,4 @@ Notes about the script and environment:
 * No Cloud NAT for untrusted VPC (or any VPCs) and Routing not allowed through appliances from untrusted to any of the other VPCs, so traffic sourced from vm-in-untrusted will fail. This VM is to test reachability from other VPCs to it. 
 * Management VPC is to reach NVAs so no reachability to hub VPCs, spoke VPCs or untrusted VPC. There is a VPC Peering to Transit VPC to reach management VPC from on-prem (Transit VPC simulates connection to on-prem). 
 * No interface tracking configured on NVAs, so loss of a single interface could cause extended traffic loss.
-* This script creates single-regional appliances. For how to configure multi-regional appliances, see see https://medium.com/google-cloud/need-dynamic-multi-region-failover-for-network-appliances-in-google-cloud-ea968e88ca0c and check back for a link to a possible corresponding script in the future.
-* Combined ping tests that can be run from each VM in the hubs and spokes to test reachability all around: ping -c 5 172.16.1.10 && ping -c 5 10.1.1.10 && ping -c 5 10.1.2.10 && ping -c 5 172.16.2.10 && ping -c 5 10.2.1.10 && ping -c 5 10.2.2.10 && ping -c 5 192.168.10.10 && ping -c 5 192.168.1.10 && ping -c 5 8.8.8.8
+* This script creates single-regional appliances. For how to configure multi-regional appliances, see see https://medium.com/google-cloud/need-dynamic-multi-region-failover-for-network-appliances-in-google-cloud-ea968e88ca0c and check back for a link to a possible future multi-regional script.
