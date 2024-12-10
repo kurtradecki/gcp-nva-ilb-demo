@@ -43,7 +43,7 @@ resource "google_compute_subnetwork" "subnet1-vpc-hub1" {
 
 
 resource "google_compute_network" "vpc-hub1-spoke1" {
- name                            = "${google_compute_network.vpc-hub1.name}spoke1"
+ name                            = "${google_compute_network.vpc-hub1.name}-spoke1"
  auto_create_subnetworks         = false
  mtu                             = 1460
  routing_mode                    = "GLOBAL"
@@ -65,7 +65,7 @@ resource "google_compute_subnetwork" "subnet1-vpc-hub1-spoke1" {
 
 
 resource "google_compute_network" "vpc-hub1-spoke2" {
- name                            = "${google_compute_network.vpc-hub1.name}spoke2"
+ name                            = "${google_compute_network.vpc-hub1.name}-spoke2"
  auto_create_subnetworks         = false
  mtu                             = 1460
  routing_mode                    = "GLOBAL"
@@ -109,7 +109,7 @@ resource "google_compute_subnetwork" "subnet1-vpc-hub2" {
 
 
 resource "google_compute_network" "vpc-hub2-spoke1" {
- name                            = "${google_compute_network.vpc-hub2.name}spoke1"
+ name                            = "${google_compute_network.vpc-hub2.name}-spoke1"
  auto_create_subnetworks         = false
  mtu                             = 1460
  routing_mode                    = "GLOBAL"
@@ -131,7 +131,7 @@ resource "google_compute_subnetwork" "subnet1-vpc-hub2-spoke1" {
 
 
 resource "google_compute_network" "vpc-hub2-spoke2" {
- name                            = "${google_compute_network.vpc-hub2.name}spoke2"
+ name                            = "${google_compute_network.vpc-hub2.name}-spoke2"
  auto_create_subnetworks         = false
  mtu                             = 1460
  routing_mode                    = "GLOBAL"
