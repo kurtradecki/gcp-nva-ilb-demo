@@ -15,8 +15,8 @@
 
 # To run script -
 # Enable APIs: Compute Engine API , Cloud Resource Manager API
-# Set org policies at project level to (if not already): disableSerialPortAccess (not enforced) , vmCanIpForward (allow all) ,
-#  requireShieldedVm (not enforced) , trustedImageProjects (allow all), vmExternalIpAccess (allow all)
+# Set org policies at project level to (if not already): disableSerialPortAccess (not enforced) , vmCanIpForward (selectively allow or allow all) ,
+#  requireShieldedVm (not enforced) , trustedImageProjects (selectively allow or allow all), vmExternalIpAccess (selectively allow or allow all)
 
 project-id          = "" # ID of an existing project to add GCP components and NVAs
 # ensure-org-policies = false                            # Currently unused - Org policies need to be in place for the script to run. Setting the value to true enables these org policies for the project only. 
