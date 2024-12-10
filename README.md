@@ -13,10 +13,8 @@ See the diagram for more architectural details: https://github.com/kurtradecki/g
 
 
 Process to run the script:
-* Create a project in GCP, if not already.
-  * See https://cloud.google.com/resource-manager/docs/creating-managing-projects 
-* Access the Google Cloud command line (in Cloud Shell or gcloud on your machine).
-  * See https://cloud.google.com/shell/docs/launching-cloud-shell
+* Create a project in GCP, if not already. For reference if needed, see https://cloud.google.com/resource-manager/docs/creating-managing-projects 
+* Access the Google Cloud command line (in Cloud Shell or gcloud on your machine). If needed, see https://cloud.google.com/shell/docs/launching-cloud-shell
 * At the command prompt run gcloud config set project <project_id>
   * For how to find project ID, see https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects
 * In Google Cloud Shell Clone this repo.
