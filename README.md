@@ -1,4 +1,4 @@
-# Automate hub and spoke with network virtual appliances for GCP learning
+# Automate hub and spoke with network virtual appliances for Google Cloud learning
 
 With a few settings you can create hub and spoke environment with full Google Cloud network setup and a fully configured pair of Network Virtual Appliances (NVAs) for learning a common Google Cloud network pattern. The NVAs used in the script are Cisco Cloud Services Routers (CSRs). Future versions of the script may add modularity and standard Terraform practices if they are needed, though the intent of the script is to create a fixed environment for learning and demonstration, **not production**.
 
